@@ -55,7 +55,7 @@ def extract_features_and_labels(trainingfile):
         for line in infile:
             components = line.rstrip('\n').split()
             if len(components) > 0:
-                # Adjusted from sample_code_features_ablation_analysis.ipynb december 2021
+                ### Taken and adjusted from sample_code_features_ablation_analysis.ipynb december 2021
                 feature_dict = dict()
                 for feature_name in selected_features:
                     row_index = feature_column_identifiers[feature_name]
@@ -79,7 +79,7 @@ def extract_features(inputfile):
         for line in infile:
             components = line.rstrip('\n').split()
             if len(components) > 0:
-                # Adjusted from sample_code_features_ablation_analysis.ipynb december 2021
+                ### Taken and adjusted from sample_code_features_ablation_analysis.ipynb december 2021
                 feature_dict = {}
                 for feature_name in selected_features:
                     row_index = feature_column_identifiers.get(feature_name)

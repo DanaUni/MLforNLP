@@ -42,7 +42,7 @@ The code can be run as follows.
 3. If necessary, change the column identifiers to that of the NE label columns in the input files.
 4. If necessary, change the system name to the name of model used in the variable system_name.
 5. Run the whole notebook at once or run the individual cells from top to bottom.
-6. Running this notebook has to be repeated for evaluations on different files (SpaCy, Stanford, LogReg, NB, SVM)
+6. Running this notebook has to be repeated for evaluations on different files (mainly for SpaCy and Stanford, as the feature_ablation.py file is used for the more advanced systems)
 
 ### basic_system.ipynb
 (used only to create the basic logreg model system with only the token as feature)

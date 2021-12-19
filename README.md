@@ -53,6 +53,7 @@ The code can be run as follows.
 ### extract_features.py
 1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320).
 2. This file can be run from the command line using 3 positional arguments and 1 keyword arguments:
+
   required:
   - argument 0: name of the python program
   - argument 1: path to the inputfile
@@ -68,6 +69,7 @@ The code can be run as follows.
 ### ner_machine_learning.py
 1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320) if not already there.
 2. This file can be run from the command line using 5 positional arguments and 4 keyword arguments:
+
   required:
   - argument 0: name of the python program
   - argument 1: path to the trainingfile
@@ -88,6 +90,7 @@ The code can be run as follows.
 ### feauture_ablation.py
 1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320) if not already there.
 2. This file can be run from the command line using 5 positional arguments and 6 keyword arguments:
+
   required:
   - argument 0: name of the python program
   - argument 1: path to the trainingfile

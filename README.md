@@ -9,21 +9,21 @@ sys
 pandas
 sklearn
 argparse
+gensim
 ```
 
 ## overview
 
 The folder contains the following files and subfolder:
-prerpocessing_2021.ipynb
-basic_evaluation.ipynb
-basic_system.ipynb
-ner_machine_learning.py
-feature_extraction.py
-feature_ablation.py
-
+- prepocessing_2021.ipynb
+- basic_evaluation.ipynb
+- basic_system.ipynb
+- ner_machine_learning.py
+- feature_extraction.py
+- feature_ablation.py
 /settings
-conversions.tsv
-generic_suffixes_toponomy_UK_IR.txt
+  - conversions.tsv
+  - generic_suffixes_toponomy_UK_IR.txt
 
 The settings folder contains the conversions.tsv for converting the NE labels and the generic_suffixes_toponomy_UK_IR.txt file for checking the token suffixes.
 
@@ -50,8 +50,8 @@ basic_system.ipynb (used only to create the basic logreg model system with only 
 3. Run the whole notebook at once or run the individual cells from top to bottom.
 
 extract_features.py
-Change directory in the commandline to the current directory (Portfolio_code_-_dwk320).
-This file can be run from the command line using 3 positional arguments and 1 keyword arguments:
+1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320).
+2. This file can be run from the command line using 3 positional arguments and 1 keyword arguments:
 required:
 argument 0: name of the python program
 argument 1: path to the inputfile
@@ -64,8 +64,8 @@ for example:
 python feature_extraction.py "..\data\conll2003.train-preprocessed.conll" "..\data\conll2003.train-preprocessed-added_features.conll"
 
 ner_machine_learning.py
-Change directory in the commandline to the current directory (Portfolio_code_-_dwk320) if not already there.
-This file can be run from the command line using 5 positional arguments and 4 keyword arguments:
+1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320) if not already there.
+2. This file can be run from the command line using 5 positional arguments and 4 keyword arguments:
 required:
 argument 0: name of the python program
 argument 1: path to the trainingfile
@@ -83,8 +83,8 @@ for example:
 python ner_machine_learning.py "..\data\conll2003.train-preprocessed-added_features.conll" "..\data\conll2003.dev-preprocessed-added_features.conll" "..\data\conll2003.dev-preprocessed-added_features_token-POS.conll" "3" -mod "logreg" -sfeat "token" "POS"
 
 feauture_ablation.py
-Change directory in the commandline to the current directory (Portfolio_code_-_dwk320) if not already there.
-This file can be run from the command line using 5 positional arguments and 6 keyword arguments:
+1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320) if not already there.
+2. This file can be run from the command line using 5 positional arguments and 6 keyword arguments:
 required:
 argument 0: name of the python program
 argument 1: path to the trainingfile

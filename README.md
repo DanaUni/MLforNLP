@@ -44,7 +44,8 @@ The code can be run as follows.
 5. Run the whole notebook at once or run the individual cells from top to bottom.
 6. Running this notebook has to be repeated for evaluations on different files (SpaCy, Stanford, LogReg, NB, SVM)
 
-### basic_system.ipynb (used only to create the basic logreg model system with only the token as feature)
+### basic_system.ipynb
+(used only to create the basic logreg model system with only the token as feature)
 1. Open the basic_system.ipynb file using Jupyter Lab or Jupyter Notebook.
 2. If necessary, change the paths to the conll trainingfile, inputfile and outputfile in the cell under the header "Change paths" near the end of the notebook.
 3. Run the whole notebook at once or run the individual cells from top to bottom.
@@ -53,31 +54,32 @@ The code can be run as follows.
 1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320).
 2. This file can be run from the command line using 3 positional arguments and 1 keyword arguments:
   required:
-  argument 0: name of the python program
-  argument 1: path to the inputfile
-  argument 2: path to the outputfile
+  - argument 0: name of the python program
+  - argument 1: path to the inputfile
+  - argument 2: path to the outputfile
 
   optional:
-  argument 3: path to the toponomyfile  (the default path is that of the file included in the submission folder, no need to change the path)
+  - argument 3: path to the toponomyfile  (the default path is that of the file included in the submission folder, no need to change the path)
 
   for example:
+
     python feature_extraction.py "..\data\conll2003.train-preprocessed.conll" "..\data\conll2003.train-preprocessed-added_features.conll"
 
 ### ner_machine_learning.py
 1. Change directory in the commandline to the current directory (Portfolio_code_-_dwk320) if not already there.
 2. This file can be run from the command line using 5 positional arguments and 4 keyword arguments:
   required:
-  argument 0: name of the python program
-  argument 1: path to the trainingfile
-  argument 2: path to the inputfile
-  argument 3: path to the outputfile
-  argument 4: identifier of the gold NE labels column
+  - argument 0: name of the python program
+  - argument 1: path to the trainingfile
+  - argument 2: path to the inputfile
+  - argument 3: path to the outputfile
+  - argument 4: identifier of the gold NE labels column
 
   optional:
-  argument 5: -mod, --models, which models to use ("logreg", "NB" or "SVM")
-  argument 6: -sfeat, --selected_features, which features to use ("token", "POS", "chunk", "caps", "digits" and/or "place_suffix")
-  argument 7: -use, --use_embeddings, if you want to use the word_embeddings ("True"/"False") (if "True", include path to word embedding model in arg 5)
-  argument 8: -lmp, --language_model_path, the path to the language model (word embedding model)
+  - argument 5: -mod, --models, which models to use ("logreg", "NB" or "SVM")
+  - argument 6: -sfeat, --selected_features, which features to use ("token", "POS", "chunk", "caps", "digits" and/or "place_suffix")
+  - argument 7: -use, --use_embeddings, if you want to use the word_embeddings ("True"/"False") (if "True", include path to word embedding model in arg 5)
+  - argument 8: -lmp, --language_model_path, the path to the language model (word embedding model)
 
   for example:
 
@@ -102,4 +104,5 @@ The code can be run as follows.
   - argument 10: -exo, --exclude_O_class, to indicate if the O class should be excluded from the tables ("True"/"False") (for the report)
 
   for example:
+
     python feature_ablation.py "..\data\conll2003.train-preprocessed-added_features.conll" "..\data\conll2003.dev-preprocessed-added_features.conll" "..\data\conll2003.dev-preprocessed-added_features_token-digits.conll" "3" -mod "SVM" -feat "token" "digits" -exo "True"

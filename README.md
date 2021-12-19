@@ -13,6 +13,7 @@ gensim
 ```
 
 ## overview
+The file paths assume that this code folder (Portfolio_code_-_dwk320) is in the same directory as the models and data folder. However, the explanation in this readme shows where the paths to the files can be changed if necessary.
 
 The folder contains the following files and subfolder:
 - prepocessing_2021.ipynb
